@@ -11,6 +11,7 @@ RUN apt-get update && apt-get install -y \
 
 RUN git clone https://kaoutharmsafri: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@github.com/kaoutharmsafri/streamlit_ML_model.git
 
+COPY requirements.txt .
 RUN pip3 install -r requirements.txt
 
 EXPOSE 8501
